@@ -1,7 +1,7 @@
 ---
 title: "Gemetría del Plano y del Espacio"
 subtitle: "Curso cero de Matemáticas para Grados"
-author: "Alfredo Sánchez Alberca &nbsp; [{{< fa envelope >}}](mailto:asalber@ceu.es) [![](img/logos/bluesky-icon.svg){width=30px}](https://aprendeconalf.bsky.social) [{{< fa home >}}](https://aprendeconalf.es)"
+author: "Alfredo Sánchez Alberca &nbsp; [{{< fa envelope >}}](mailto:asalber@ceu.es) [{{< fa brands bluesky >}}](https://aprendeconalf.bsky.social) [{{< fa home >}}](https://aprendeconalf.es)"
 institute: Universidad CEU San Pablo
 logo: img/logos/sticker.png
 lang: es

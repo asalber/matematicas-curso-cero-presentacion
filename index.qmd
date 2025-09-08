@@ -11,6 +11,7 @@ lang: es
 1. [Geometría del plano y espacio](01-geometria-plano-espacio.html).
 2. [Cálculo matricial](02-matrices.html).
 3. [Trigonometría](03-trigonometria.html).
+4. [Funciones elementales](04-funciones-elementales.html).
 
 ## Licencia
 
