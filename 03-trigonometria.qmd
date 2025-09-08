@@ -1,0 +1,161 @@
+---
+title: "Trigonometría"
+subtitle: "Curso cero de Matemáticas para Grados"
+author: "Alfredo Sánchez Alberca &nbsp; [{{< fa envelope >}}](mailto:asalber@ceu.es) [![](img/logos/bluesky-icon.svg){width=30px}](https://aprendeconalf.bsky.social) [{{< fa home >}}](https://aprendeconalf.es)"
+institute: Universidad CEU San Pablo
+logo: img/logos/sticker.png
+lang: es
+fig-align: center
+navigation-mode: vertical
+slide-level: 3
+---
+
+## ¿Qué es la Trinonometría?
+
+La _trigonometría_ es una rama de las matemáticas que estudia las relaciones entre los ángulos y los lados de los triángulos. Su nombre proviene del griego _trigonon_ (triángulo) y _metron_ (medida).
+
+Es fundamental en diversas áreas como la física, la ingeniería, la astronomía y la navegación.
+
+![\ ](img/trigonometria/trigonometria.png)
+
+## Ángulos
+
+Para medir la rotación de los objetos usamos **ángulos**. Los ángulos se pueden medir en **grados** ($^\circ$) o en **radianes** ($\text{rad}$).
+
+- Un círculo completo tiene $360^\circ$ o $2\pi \text{ rad}$.
+- Un ángulo recto mide $90^\circ$ o $\frac{\pi}{2} \text{ rad}$.
+
+Conversión entre grados y radianes:
+
+$$
+\begin{align*}
+\text{radianes} &= \text{grados} \times \frac{\pi}{180}, \\\text{grados} &= \text{radianes} \times \frac{180}{\pi}
+\end{align*}
+$$
+
+## 📐 Razones trigonométricas
+
+Surgen en geometría al medir las relaciones entre los catetos de un triángulo rectángulo, que dependen del ángulo del cateto contiguo y la hipotenusa de dicho triángulo. 
+
+:::: {.columns}
+::: {.column}
+
+- Seno
+- Coseno
+- Tangente
+:::
+
+::: {.column}
+
+- Arcoseno
+- Arcocoseno
+- Arcotangente
+:::
+::::
+
+## Seno de un ángulo
+
+:::{#def-seno-angulo}
+## Seno de un ángulo
+Sea $\alpha$ cualquiera de los ángulos agudos de un triángulo rectángulo, se define el *seno* de $\alpha$, y se nota $\operatorname{sen} \alpha$, como el cociente entre el cateto opuesto y la hipotenusa.
+:::
+
+![Seno de un ángulo de un triángulo rectángulo.](img/trigonometria/seno-triangulo)
+
+## Coseno de un ángulo
+
+:::{#def-coseno-angulo}
+## Coseno de un ángulo
+Sea $\alpha$ cualquiera de los ángulos agudos de un triángulo rectángulo, se define el *coseno* de $\alpha$, y se nota $\cos \alpha$, como el cociente entre el cateto contiguo y la hipotenusa.
+:::
+
+![Coseno de un ángulo de un triángulo rectángulo.](img/trigonometria/coseno-triangulo)
+
+
+## Tangente de un ángulo
+
+:::{#def-tangente-angulo}
+## Tangente de un ángulo
+Sea $\alpha$ cualquiera de los ángulos agudos de un triángulo rectángulo, se define la *tangente* de $\alpha$, y se nota $\operatorname{tg} \alpha$, como el cociente entre el cateto opuesto y el cateto contiguo.
+:::
+
+![Tangente de un ángulo de un triángulo rectángulo.](img/trigonometria/tangente-triangulo)
+
+
+---
+
+## ✏️ Ejemplo 
+
+:::: {.columns}
+::: {.column width="40%"}
+- $\operatorname{sen}(\alpha) = \frac{3}{5}$
+- $\cos(\alpha) = \frac{4}{5}$
+- $\operatorname{tg}(\alpha) = \frac{3}{4}$.
+
+:::
+
+::: {.column width="60%"}
+
+![\ ](img/trigonometria/ejemplo-triangulo-rectangulo){height="400px"}
+:::
+::::
+
+## Razones trigonométricas en la circunferencia unitaria
+
+Si inscribimos el triángulo en una circunferencia de radio 1, para cualquier ángulo $\alpha$ se tiene que 
+
+:::: {.columns}
+::: {.column width="45%"}
+
+- **Seno**: La coordenada $y$ del punto correspondiente al ángulo $\alpha$.
+- **Coseno**: La coordenada $x$ del punto correspondiente al ángulo $\alpha$.
+- **Tangente**: La razón entre el seno y el coseno, es decir, $\operatorname{tg}(\alpha) = \frac{\operatorname{sen}(\alpha)}{\cos(\alpha)}$.
+:::
+
+::: {.column width="55%"}
+
+![\ ](img/trigonometria/circunferencia-unitaria){height="400px"}
+:::
+::::
+
+## Razones trigonométricas de ángulos notables
+
+| Ángulo $\alpha$      | $\operatorname{sen}(\alpha)$        | $\cos(\alpha)$        | $\operatorname{tg}(\alpha)$        |
+|:-------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+| $0 \mbox{ rad}\ (0^\circ$)   | $0$                   | $1$                   | $0$                   |
+| $\frac{\pi}{6} \mbox{ rad}\ (30^\circ)$  | $\tfrac{1}{2}$        | $\tfrac{\sqrt{3}}{2}$ | $\tfrac{1}{\sqrt{3}}$ |
+| $\frac{\pi}{4} \mbox{ rad}\ (45^\circ)$  | $\tfrac{\sqrt{2}}{2}$ | $\tfrac{\sqrt{2}}{2}$ | $1$                   |
+| $\frac{\pi}{3} \mbox{ rad}\ (60^\circ)$  | $\tfrac{\sqrt{3}}{2}$ | $\tfrac{1}{2}$        | $\sqrt{3}$            |
+| $\frac{\pi}{2} \mbox{ rad}\ (90^\circ)$  | $1$                   | $0$                   | $\infty$              |
+
+## Identidades trigonométricas fundamentales
+
+- Pitagórica: $\operatorname{sen}^2(\alpha) + \cos^2(\alpha) = 1$  
+- Cociente: $\operatorname{tg}(\alpha) = \frac{\operatorname{sen}(\alpha)}{\cos(\alpha)}$  
+- Simetrías: $\operatorname{sen}(-\alpha) = -\operatorname{sen}(\alpha),\ \cos(-\alpha) = \cos(\alpha)$
+
+- Ángulos complementarios: $\operatorname{sen}(\frac{\pi}{2} - \alpha) = \cos(\alpha),\ \cos(\frac{\pi}{2} - \alpha) = \operatorname{sen}(\alpha)$
+
+## Razones trigonométricas de la suma y diferencia de ángulos
+
+- Suma de ángulos:
+  - $\operatorname{sen}(\alpha + \beta) = \operatorname{sen}(\alpha)\cos(\beta) + \cos(\alpha)\operatorname{sen}(\beta)$
+  - $\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \operatorname{sen}(\alpha)\operatorname{sen}(\beta)$
+  - $\operatorname{tg}(\alpha + \beta) = \frac{\operatorname{tg}(\alpha) + \operatorname{tg}(\beta)}{1 - \operatorname{tg}(\alpha)\operatorname{tg}(\beta)}$
+
+- Diferencia de ángulos:
+  - $\operatorname{sen}(\alpha - \beta) = \operatorname{sen}(\alpha)\cos(\beta) - \cos(\alpha)\operatorname{sen}(\beta)$
+  - $\cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \operatorname{sen}(\alpha)\operatorname{sen}(\beta)$
+  - $\operatorname{tg}(\alpha - \beta) = \frac{\operatorname{tg}(\alpha) - \operatorname{tg}(\beta)}{1 + \operatorname{tg}(\alpha)\operatorname{tg}(\beta)}$
+  
+## Razones trigonométricas de ángulos dobles y mitad
+
+- Ángulo doble:
+  - $\operatorname{sen}(2\alpha) = 2\operatorname{sen}(\alpha)\cos(\alpha)$
+  - $\cos(2\alpha) = \cos^2(\alpha) - \operatorname{sen}^2(\alpha)$
+  - $\operatorname{tg}(2\alpha) = \frac{2\operatorname{tg}(\alpha)}{1 - \operatorname{tg}^2(\alpha)}$
+
+- Ángulo mitad:
+  - $\operatorname{sen}\left(\frac{\alpha}{2}\right) = \sqrt{\frac{1 - \cos(\alpha)}{2}}$
+  - $\cos\left(\frac{\alpha}{2}\right) = \sqrt{\frac{1 + \cos(\alpha)}{2}}$
+  - $\operatorname{tg}\left(\frac{\alpha}{2}\right) = \frac{\operatorname{sen}(\alpha)}{1 + \cos(\alpha)} = \frac{1-\cos(\alpha)}{\operatorname{sen}(\alpha)}$

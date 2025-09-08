@@ -1,0 +1,31 @@
+\begin{tikzpicture}[scale=1, >=Latex]
+
+  % Ejes coordenados
+  \draw[->, myblack] (-1,0) -- (5,0) node[right] {$x$};
+  \draw[->, myblack] (0,-1) -- (0,5) node[above] {$y$};
+
+  % Vértices del triángulo
+  \coordinate (A) at (0,0);  % origen
+  \coordinate (B) at (3,0);  % cateto contiguo = 3
+  \coordinate (C) at (3,4);  % cateto opuesto = 4
+
+  % Dibujar triángulo
+  \draw[thick, myblue] (A) -- (B) -- (C) -- cycle;
+
+  % Marcar los vértices
+  \fill[myblue] (A) circle (2pt) node[below left, myblue] {$A(0,0)$};
+  \fill[myblue] (B) circle (2pt) node[below right, myblue] {$B(3,0)$};
+  \fill[myblue] (C) circle (2pt) node[above right, myblue] {$C(3,4)$};
+
+  % Etiquetas de lados
+  \node[myblack] at (1.5,-0.3) {$3$};
+  \node[myblack] at (3.3,2) {$4$};
+  \node[myblack] at (1.4,2.3) {$5$};
+
+  % Marcar ángulo recto
+  \draw[\mygray] (2.7,0) -- (2.7,0.3) -- (3,0.3);
+
+  % Ángulo alpha
+   \draw[thick,myred] (0.5,0) arc (0:54:0.5);
+  \node[myred] at (0.7,0.35) {$\alpha$};
+\end{tikzpicture}

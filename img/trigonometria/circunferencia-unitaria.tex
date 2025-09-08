@@ -1,0 +1,26 @@
+\begin{tikzpicture}[scale=3, >=Latex]
+  % Ejes y círculo
+  \draw[->, myblack] (-1.2,0) -- (1.2,0) node[below right] {$x$};
+  \draw[->, myblack] (0,-1.2) -- (0,1.2) node[above left] {$y$};
+  \draw[myblack] (0,0) circle (1);
+
+\node at (1,0) [below right, myblack] {1};
+\node at (0,1) [above left, myblack] {1};
+
+  % Radio y ángulos notables
+  \foreach \ang/\lab in {60/60^\circ}{
+    \draw[myblue] (0,0) -- ({cos(\ang)},{sin(\ang)});
+    \fill ({cos(\ang)},{sin(\ang)}) circle (0.015);
+  }
+
+  
+  % Arco para el ángulo theta
+  \draw[thick,myred,->] (0.3,0) arc (0:60:0.3);
+  \node[myred] at (0.4,0.18) {$\alpha$};
+
+  % Proyección para mostrar cos(theta) y sin(theta) en 60°
+  \draw[dashed, mygray] ({cos(60)},{sin(60)}) -- ({cos(60)},0);
+  \draw[dashed, mygray] ({cos(60)},{sin(60)}) -- (0,{sin(60)});
+  \node[below, myblack] at ({cos(60)},0) {$\cos(\alpha)$};
+  \node[left, myblack]  at (0,{sin(60)})   {$\operatorname{sen}(\alpha)$};
+\end{tikzpicture}
